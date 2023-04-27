@@ -24,7 +24,7 @@ public struct Steps<Element>: View {
     ///
     /// - Parameter state: State to manage component
     /// - Parameter onCreateStep: Block to create each step
-    public init(state: StepsState<Element>,config: Config = Config(), onCreateStep: @escaping (Element) -> Step) {
+    public init(state: StepsState<Element>, config: Config = Config(), onCreateStep: @escaping (Element) -> Step) {
         self.state = state
         self.config = config
         self.onCreateStep = onCreateStep
